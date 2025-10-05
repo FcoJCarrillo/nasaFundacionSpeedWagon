@@ -9,8 +9,10 @@ import { Layout } from "./pages/Layout";
 import { HomePage } from "./pages/HomePage.jsx";
 import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
-import { ThreeDRoute } from "./pages/ThreeDRoute.jsx";
-import App3D from './components/3d/App.jsx';
+import App3D from './components/3d/App1.jsx';
+import Lvl1 from './pages/ThreeDRouteLvl1.jsx';
+import Lvl2 from './pages/ThreeDRouteLvl2.jsx';
+import Lvl3 from './pages/ThreeDRouteLvl3.jsx';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,8 +29,10 @@ export const router = createBrowserRouter(
 
       <Route index element={<HomePage />} />
       <Route path="/demo3" element={<App3D />} />
-      <Route path="/ThreeDRoute" element={<ThreeDRoute />} />
-      <Route path="/single/:theId" element={<Single />} /> 
+      <Route path="/Lvl1" element={<Lvl1 />} />
+      <Route path="/Lvl2" element={<Lvl2 />} />
+      <Route path="/Lvl3" element={<Lvl3 />} />
+      <Route path="/single/:theId" element={<Single />} />
       <Route path="/demo" element={<Demo />} />
     </Route>
   )

@@ -3,7 +3,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import { Botones } from '../../pages/Botones';
 
-// --- Componente de Carga 3D ---
 // Muestra un indicador de carga 3D (sustituye al componente LoadingSpinner3D)
 function LoadingSpinner3D() {
   const meshRef = useRef();
@@ -22,19 +21,14 @@ function LoadingSpinner3D() {
   );
 }
 
-// --- Componente Modelo (anteriormente en Model.jsx) ---
 // La lógica se simplifica para usar useGLTF directamente.
 function Model(props) {
   // useGLTF lanza una Promise que es capturada por <Suspense>.
-  // Hemos eliminado el try-catch incorrecto.
   const gltf = useGLTF('/NASA.glb');
 
   // Devolvemos el objeto 3D cargado.
   return <primitive object={gltf.scene} {...props} />;
 }
-
-
-// --- Componente principal ---
 
 // Componente principal de la aplicación.
 export default function App() {
@@ -47,7 +41,6 @@ export default function App() {
         <Canvas
           // Ajustamos la posición de la cámara para ver el modelo más grande.
           camera={{ position: [0, 0, 8], fov: 50 }}
-        // El Canvas ahora ocupa el 100% del contenedor padre (w-screen h-screen)
         >
           {/* Luces */}
           <ambientLight intensity={0.8} />
