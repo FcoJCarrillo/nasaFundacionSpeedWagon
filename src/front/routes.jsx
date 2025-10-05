@@ -13,6 +13,7 @@ import App3D from './components/3d/App1.jsx';
 import Lvl1 from './pages/ThreeDRouteLvl1.jsx';
 import Lvl2 from './pages/ThreeDRouteLvl2.jsx';
 import Lvl3 from './pages/ThreeDRouteLvl3.jsx';
+import Signup from "./pages/Signup.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ export const router = createBrowserRouter(
       <Route path="/Lvl3" element={<Lvl3 />} />
       <Route path="/single/:theId" element={<Single />} />
       <Route path="/demo" element={<Demo />} />
+      <Route path="/signup" element={<Signup/>} />
     </Route>
   )
 );

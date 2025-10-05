@@ -18,11 +18,11 @@ export const Botones = () => {
       <div className="mt-3 mb-3 text-center">
         <Container className="justify-content-md-center">
           <Row>
-            <Col md={4}><Button variant="outline-primary" onClick={handleLvl1} size="lg">Level 1</Button>
+            <Col md={4}><Button variant="outline-warning" onClick={handleLvl1} size="lg">Level 1</Button>
             </Col>
-            <Col md={4}><Button variant="outline-primary" onClick={handleLvl2} size="lg">Level 2</Button>
+            <Col md={4}><Button variant="outline-warning" onClick={handleLvl2} size="lg">Level 2</Button>
             </Col>
-            <Col md={4}><Button variant="outline-primary" onClick={handleLvl3} size="lg">Level 3</Button>
+            <Col md={4}><Button variant="outline-warning" onClick={handleLvl3} size="lg">Level 3</Button>
             </Col>
           </Row>
         </Container>

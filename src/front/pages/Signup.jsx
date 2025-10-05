@@ -1,12 +1,27 @@
 import React, { useContext } from "react";
-import { Context } from "../store/appContext.js";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-export const Signup = () => {
-    const { store, actions } = useContext(Context);
+// Importa el nuevo componente de formulario
+import MedicalForm from "./MedicalForm.jsx";
+import ThreeDRouteMarcelo from "./ThreeDRouteMarcelo.jsx";
+
+const Signup = () => {
 
     return (
-        <div className="text-center mt-5">
-             <Layout/> 
-        </div>
+        <>
+            <Container className="my-5">
+                <Row className="justify-content-center align-items-center">
+                    <Col md="6">
+                        <MedicalForm />
+                    </Col>
+                    <Col md="6">
+                        <ThreeDRouteMarcelo />
+                    </Col>
+                </Row>
+            </Container>
+        </>
     );
 };
+export default Signup; 
