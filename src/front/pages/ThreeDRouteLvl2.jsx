@@ -22,7 +22,7 @@ const ThreeDRoute2 = () => {
   }
   return (
     <>
-<>
+
     <Container>
       <Row className="justify-content-md-center">
         <Col md="auto">
@@ -35,7 +35,7 @@ const ThreeDRoute2 = () => {
     </Container>
       
     </>
-    </>
+
   );
 };
 

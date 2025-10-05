@@ -3,7 +3,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 const MedicalForm = () => {
-    // Estado para manejar los datos del formulario (opcional pero recomendado)
     const [formData, setFormData] = useState({
         peso: '',
         altura: '',
@@ -20,7 +19,6 @@ const MedicalForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Datos enviados:', formData);
-        // Aquí podrías enviar los datos a tu backend o a las acciones de tu Context
     };
 
     return (
